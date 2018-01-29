@@ -267,7 +267,6 @@ export { UnsubscriptionError } from 'rxjs/util/UnsubscriptionError';
 - add
 
 ```ts
-// add to ovservable
 import 'rxjs/add/observable/bindCallback';
 import 'rxjs/add/observable/bindNodeCallback';
 import 'rxjs/add/observable/combineLatest';
