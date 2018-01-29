@@ -1,0 +1,20 @@
+{
+    "name": "meepo-rxjs",
+    "version": "1.0.0",
+    "repository": "https://github.com/dherges/meepo-rxjs.git",
+    "author": "david <david@spektrakel.de>",
+    "license": "MIT",
+    "private": true,
+    "peerDependencies": {
+        "@angular/core": "*",
+        "@angular/common": "*"
+    },
+    "ngPackage": {
+        "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+        "dest": "./publish",
+        "workingDirectory": "./.ng_build",
+        "lib": {
+            "entryFile": "./public_api.ts"
+        }
+    }
+}
