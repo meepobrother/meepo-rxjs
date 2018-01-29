@@ -46,7 +46,8 @@ function mySimpleOperator(someCallback) {
 }
 
 const obs = someObservable.pipe(mySimpleOperator(x => x + '!'));
-``
+
+```
 
 - add
 
