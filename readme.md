@@ -1,8 +1,6 @@
 
 > rxjs统一导出, 也可以当字典查询
 
-- install
-
 - [rxjs导入说明](https://rxjs-cn.github.io/learn-rxjs-operators/concepts/operator-imports.html)
 
 ```sh
