@@ -1,5 +1,9 @@
 - install
 
+- [rxjs导入说明](https://rxjs-cn.github.io/learn-rxjs-operators/concepts/operator-imports.html)
+
+
+
 ```sh
 git submodule add https://github.com/meepobrother/meepo-rxjs.git src/app/rx
 ```
