@@ -1,5 +1,32 @@
 #rxjs 5.5.6
 
+- install
+```sh
+yarn add meepo-rxjs
+```
+
+- use
+
+```
+import { map, Subject } from 'meepo-rxjs';
+let sub$ = new Subject();
+sub$.pipe(
+    map((res)=>({id: res.id}))
+)
+
+sub$.subscribe(res=>{
+    // 2, 3, 4
+    console.log(res);
+});
+
+sub$.next({id: 2});
+sub$.next({id: 3});
+sub$.next({id: 4});
+```
+
+> 注意：_do
+
+- 导出
 ```ts
 // observable
 export { ArrayLikeObservable } from 'rxjs/observable/ArrayLikeObservable';
@@ -83,6 +110,7 @@ export {
 } from 'rxjs/operators';
 export { zip } from 'rxjs/operators/zip';
 export { zipAll } from 'rxjs/operators/zipAll';
+import { _do } from 'rxjs/operator/do';
 
 // rxjs
 export { Observable } from 'rxjs/Observable';

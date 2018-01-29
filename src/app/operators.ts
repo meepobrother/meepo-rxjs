@@ -29,4 +29,4 @@ export {
 } from 'rxjs/operators';
 export { zip } from 'rxjs/operators/zip';
 export { zipAll } from 'rxjs/operators/zipAll';
-
+import { _do } from 'rxjs/operator/do';
