@@ -24,6 +24,28 @@ of(1,2,3,4,5,6).pipe(
 })
 ```
 
+- 自定义操作符
+
+```ts
+function mySimpleOperator(someCallback) {
+  // 注意这里返回的是函数
+  return function mySimpleOperatorImplementation(source) {
+    return Observable.create(subscriber => {
+      var subscription = source.subscribe(value => {
+        try {
+          subscriber.next(someCallback(value));
+        } catch(err) {
+          subscriber.error(err);
+        }
+      },
+      err => subscriber.error(err),
+      () => subscriber.complete());
+      return subscription;
+   });
+  }
+}
+``
+
 - add
 
 ```ts
