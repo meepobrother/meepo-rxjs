@@ -1,4 +1,5 @@
-- use
+- install
+
 ```sh
 git submodule add https://github.com/meepobrother/meepo-rxjs.git src/app/rx
 ```
