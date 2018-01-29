@@ -1,9 +1,0 @@
-{
-    "name": "meepo-rxjs",
-    "version": "5.6.2",
-    "repository": "https://github.com/dherges/meepo-rxjs.git",
-    "author": "david <david@spektrakel.de>",
-    "license": "MIT",
-    "private": false,
-    "typing": "./public_api.d.ts"
-}
