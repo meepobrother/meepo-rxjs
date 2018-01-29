@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
-import { map, Subject, tap , of, Observable } from 'meepo-rxjs';
+// rxjs
+// import { tap, map } from 'rxjs/operators';
+// import { of } from 'rxjs/observable/of';
+// import { Subject } from 'rxjs/Subject';
+// import { Observable } from 'rxjs/Observable';
+
+// meepo-rxjs
+import { tap, map, of, Subject, Observable } from 'meepo-rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +15,7 @@ import { map, Subject, tap , of, Observable } from 'meepo-rxjs';
 })
 export class AppComponent {
   title = 'app';
-
+  sub: Subject<any> = new Subject();
   constructor() {
     let sub$: Observable<any> = of(1, 2, 3, 4);
     sub$ = sub$.pipe(

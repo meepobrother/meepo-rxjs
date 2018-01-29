@@ -27,6 +27,7 @@ sub$.next({id: 4});
 > 注意：do是关键字，请使用tap
 
 - 导出
+
 ```ts
 // observable
 export { ArrayLikeObservable } from 'rxjs/observable/ArrayLikeObservable';
@@ -47,7 +48,6 @@ export { ForkJoinObservable } from 'rxjs/observable/ForkJoinObservable';
 export { from } from 'rxjs/observable/from';
 export { fromEvent } from 'rxjs/observable/fromEvent';
 export { FromEventObservable } from 'rxjs/observable/FromEventObservable';
-
 export { fromEventPattern } from 'rxjs/observable/fromEventPattern';
 export { FromEventPatternObservable } from 'rxjs/observable/FromEventPatternObservable';
 export { FromObservable } from 'rxjs/observable/FromObservable';
@@ -79,47 +79,120 @@ export { using } from 'rxjs/observable/using';
 export { UsingObservable } from 'rxjs/observable/UsingObservable';
 
 // operators
-export {
-    audit, auditTime, buffer, bufferCount, bufferTime,
-    bufferToggle, bufferWhen, catchError,
-    combineAll, combineLatest, concat,
-    concatAll, concatMap, concatMapTo,
-    count, debounce, debounceTime,
-    defaultIfEmpty, delay, delayWhen,
-    dematerialize, distinct,
-    distinctUntilChanged, distinctUntilKeyChanged,
-    elementAt, every, exhaust, exhaustMap,
-    expand, filter, finalize, find,
-    findIndex, first, flatMap, groupBy,
-    ignoreElements, isEmpty, last,
-    map, mapTo, materialize, max, merge, mergeAll,
-    mergeMap, mergeMapTo, mergeScan, min, multicast, observeOn,
-    onErrorResumeNext, pairwise, partition,
-    pluck, publish, publishBehavior,
-    publishLast, publishReplay, race,
-    reduce, refCount, repeat,
-    repeatWhen, retry, retryWhen, sample,
-    sampleTime, scan, sequenceEqual, share,
-    shareReplay, single, skip, skipLast, skipUntil,
-    skipWhile, startWith, switchAll,
-    switchMap, switchMapTo, take, takeLast, takeUntil,
-    takeWhile, tap, throttle, throttleTime,
-    timeInterval, timeout, timeoutWith,
-    timestamp, toArray, window, windowCount, windowTime,
-    windowToggle, windowWhen, withLatestFrom
-} from 'rxjs/operators';
 export { zip } from 'rxjs/operators/zip';
+export { audit } from 'rxjs/operators/audit';
+export { auditTime } from 'rxjs/operators/auditTime';
+export { buffer } from 'rxjs/operators/buffer';
+export { bufferCount } from 'rxjs/operators/bufferCount';
+export { bufferTime, } from 'rxjs/operators/bufferTime';
+export { bufferToggle } from 'rxjs/operators/bufferToggle';
+export { bufferWhen } from 'rxjs/operators/bufferWhen';
+export { catchError } from 'rxjs/operators/catchError';
+export { combineAll } from 'rxjs/operators/combineAll';
+export { combineLatest } from 'rxjs/operators/combineLatest';
+export { concat } from 'rxjs/operators/concat';
+export { concatAll } from 'rxjs/operators/concatAll';
+export { concatMap } from 'rxjs/operators/concatMap';
+export { concatMapTo } from 'rxjs/operators/concatMapTo';
+export { count } from 'rxjs/operators/count';
+export { debounce } from 'rxjs/operators/debounce';
+export { debounceTime } from 'rxjs/operators/debounceTime';
+export { distinctUntilChanged } from 'rxjs/operators/distinctUntilChanged';
+export { distinctUntilKeyChanged } from 'rxjs/operators/distinctUntilKeyChanged';
+export { elementAt } from 'rxjs/operators/elementAt';
+export { every } from 'rxjs/operators/every';
+export { exhaust } from 'rxjs/operators/exhaust';
+export { exhaustMap } from 'rxjs/operators/exhaustMap';
+export { defaultIfEmpty } from 'rxjs/operators/defaultIfEmpty';
+export { delay } from 'rxjs/operators/delay';
+export { delayWhen } from 'rxjs/operators/delayWhen';
+export { dematerialize } from 'rxjs/operators/dematerialize';
+export { distinct } from 'rxjs/operators/distinct';
+export { expand } from 'rxjs/operators/expand';
+export { filter } from 'rxjs/operators/filter';
+export { finalize } from 'rxjs/operators/finalize';
+export { find } from 'rxjs/operators/find';
+export { findIndex } from 'rxjs/operators/findIndex';
+export { first } from 'rxjs/operators/first';
+export { groupBy } from 'rxjs/operators/groupBy';
+export { ignoreElements, } from 'rxjs/operators/ignoreElements';
+export { isEmpty } from 'rxjs/operators/isEmpty';
+export { last } from 'rxjs/operators/last';
+export { map } from 'rxjs/operators/map';
+export { mapTo } from 'rxjs/operators/mapTo';
+export { materialize } from 'rxjs/operators/materialize';
+export { max } from 'rxjs/operators/max';
+export { merge } from 'rxjs/operators/merge';
+export { mergeAll } from 'rxjs/operators/mergeAll';
+export { mergeMap } from 'rxjs/operators/mergeMap';
+export { mergeMapTo } from 'rxjs/operators/mergeMapTo';
+export { mergeScan } from 'rxjs/operators/mergeScan';
+export { min } from 'rxjs/operators/min';
+export { multicast } from 'rxjs/operators/multicast';
+export { observeOn } from 'rxjs/operators/observeOn';
+export { onErrorResumeNext } from 'rxjs/operators/onErrorResumeNext';
+export { pairwise } from 'rxjs/operators/pairwise';
+export { partition } from 'rxjs/operators/partition';
+export { pluck } from 'rxjs/operators/pluck';
+export { publish } from 'rxjs/operators/publish';
+export { publishBehavior } from 'rxjs/operators/publishBehavior';
+export { publishLast, } from 'rxjs/operators/publishLast';
+export { publishReplay, } from 'rxjs/operators/publishReplay';
+export { race, } from 'rxjs/operators/race';
+export { reduce, } from 'rxjs/operators/reduce';
+export { refCount, } from 'rxjs/operators/refCount';
+export { repeat, } from 'rxjs/operators/repeat';
+export { repeatWhen, } from 'rxjs/operators/repeatWhen';
+export { retry, } from 'rxjs/operators/retry';
+export { retryWhen, } from 'rxjs/operators/retryWhen';
+export { sample, } from 'rxjs/operators/sample';
+export { sampleTime } from 'rxjs/operators/sampleTime';
+export { scan } from 'rxjs/operators/scan';
+export { sequenceEqual } from 'rxjs/operators/sequenceEqual';
+export { share } from 'rxjs/operators/share';
+export { shareReplay } from 'rxjs/operators/shareReplay';
+export { single } from 'rxjs/operators/single';
+export { skip } from 'rxjs/operators/skip';
+export { skipLast } from 'rxjs/operators/skipLast';
+export { skipUntil } from 'rxjs/operators/skipUntil';
+export { skipWhile } from 'rxjs/operators/skipWhile';
+export { startWith } from 'rxjs/operators/startWith';
+export { switchAll } from 'rxjs/operators/switchAll';
+export { switchMap } from 'rxjs/operators/switchMap';
+export { switchMapTo } from 'rxjs/operators/switchMapTo';
+export { take } from 'rxjs/operators/take';
+export { takeLast } from 'rxjs/operators/takeLast';
+export { takeUntil } from 'rxjs/operators/takeUntil';
+export { takeWhile } from 'rxjs/operators/takeWhile';
+export { tap } from 'rxjs/operators/tap';
+export { throttleTime } from 'rxjs/operators/throttleTime';
+export { timeInterval } from 'rxjs/operators/timeInterval';
+export { timeout } from 'rxjs/operators/timeout';
+export { timeoutWith } from 'rxjs/operators/timeoutWith';
+export { throttle } from 'rxjs/operators/throttle';
+export { timestamp } from 'rxjs/operators/timestamp';
+export { toArray } from 'rxjs/operators/toArray';
+export { window } from 'rxjs/operators/window';
+export { windowCount } from 'rxjs/operators/windowCount';
+export { windowTime } from 'rxjs/operators/windowTime';
+export { windowToggle } from 'rxjs/operators/windowToggle';
+export { windowWhen } from 'rxjs/operators/windowWhen';
+export { withLatestFrom } from 'rxjs/operators/withLatestFrom';
 export { zipAll } from 'rxjs/operators/zipAll';
+export { tap as do } from 'rxjs/operators/tap';
+export { mergeMap as flatMap } from 'rxjs/operators/mergeMap';
 
-// rxjs
+/* Observable */
 export { Observable } from 'rxjs/Observable';
+/* Subjects */
 export { Subject } from 'rxjs/Subject';
 export { BehaviorSubject } from 'rxjs/BehaviorSubject';
 export { ReplaySubject } from 'rxjs/ReplaySubject';
+/* Subscription */
 export { Subscription } from 'rxjs/Subscription';
+/* Notification */
 export { Notification } from 'rxjs/Notification';
 
-// scheduler
 export { Action } from 'rxjs/scheduler/Action';
 export { animationFrame as animationFrameScheduler } from 'rxjs/scheduler/animationFrame';
 export { AnimationFrameAction } from 'rxjs/scheduler/AnimationFrameAction';
@@ -135,7 +208,6 @@ export { QueueAction } from 'rxjs/scheduler/QueueAction';
 export { QueueScheduler } from 'rxjs/scheduler/QueueScheduler';
 export { VirtualTimeScheduler } from 'rxjs/scheduler/VirtualTimeScheduler';
 
-// util
 
 
 export { AnimationFrame } from 'rxjs/util/AnimationFrame';
