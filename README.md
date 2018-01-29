@@ -24,7 +24,7 @@ sub$.next({id: 3});
 sub$.next({id: 4});
 ```
 
-> 注意：_do
+> 注意：do是关键字，请使用tap
 
 - 导出
 ```ts
@@ -110,7 +110,6 @@ export {
 } from 'rxjs/operators';
 export { zip } from 'rxjs/operators/zip';
 export { zipAll } from 'rxjs/operators/zipAll';
-import { _do } from 'rxjs/operator/do';
 
 // rxjs
 export { Observable } from 'rxjs/Observable';

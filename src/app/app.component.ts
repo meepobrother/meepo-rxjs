@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { map, Subject, do } from 'meepo-rxjs';
+import { map, Subject, tap , of, Observable } from 'meepo-rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,17 +10,17 @@ export class AppComponent {
   title = 'app';
 
   constructor() {
-    const sub$ = new Subject();
-    sub$.pipe(
-      map((res: any) => ({ id: res.id }))
+    let sub$: Observable<any> = of(1, 2, 3, 4);
+    sub$ = sub$.pipe(
+      tap(() => {
+        console.log('next');
+      }),
+      map((res: any) => ({ id: res }))
     );
     sub$.subscribe(res => {
       // 2,3,4
       console.log(res);
     });
-    sub$.next({ id: 2 });
-    sub$.next({ id: 3 });
-    sub$.next({ id: 4 });
   }
 }
 

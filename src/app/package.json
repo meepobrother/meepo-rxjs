@@ -1,10 +1,10 @@
 {
     "name": "meepo-rxjs",
-    "version": "1.0.0",
+    "version": "5.5.9",
     "repository": "https://github.com/dherges/meepo-rxjs.git",
     "author": "david <david@spektrakel.de>",
     "license": "MIT",
-    "private": true,
+    "private": false,
     "peerDependencies": {
         "@angular/core": "*",
         "@angular/common": "*"

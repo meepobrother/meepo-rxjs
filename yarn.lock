@@ -3772,9 +3772,9 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-meepo-rxjs@^5.5.6:
-  version "5.5.6"
-  resolved "https://registry.yarnpkg.com/meepo-rxjs/-/meepo-rxjs-5.5.6.tgz#93e456302f5e029807969b34e8b18c818edffd69"
+meepo-rxjs@^5.5.9:
+  version "5.5.9"
+  resolved "https://registry.yarnpkg.com/meepo-rxjs/-/meepo-rxjs-5.5.9.tgz#bad9eabc5ad39218f8747af8119f6d94d5330ee0"
 
 mem@^1.1.0:
   version "1.1.0"

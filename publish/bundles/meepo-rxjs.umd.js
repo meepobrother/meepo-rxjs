@@ -16061,6 +16061,7 @@ exports.windowWhen = windowWhen;
 exports.withLatestFrom = withLatestFrom;
 exports.zip = zip_2;
 exports.zipAll = zipAll_2;
+exports.do = tap_2;
 exports.ArrayLikeObservable = ArrayLikeObservable_2;
 exports.ArrayObservable = ArrayObservable_2;
 exports.BoundCallbackObservable = BoundCallbackObservable_2;

@@ -1,17 +1,1 @@
-{
-    "name": "meepo-rxjs",
-    "version": "5.5.6",
-    "repository": "https://github.com/dherges/meepo-rxjs.git",
-    "author": "david <david@spektrakel.de>",
-    "license": "MIT",
-    "private": false,
-    "peerDependencies": {
-        "@angular/core": "*",
-        "@angular/common": "*"
-    },
-    "main": "bundles/meepo-rxjs.umd.js",
-    "module": "meepo-rxjs.es5.js",
-    "es2015": "meepo-rxjs.js",
-    "typings": "meepo-rxjs.d.ts",
-    "metadata": "meepo-rxjs.metadata.json"
-}
+{"name":"meepo-rxjs","version":"5.5.9","repository":"https://github.com/dherges/meepo-rxjs.git","author":"david <david@spektrakel.de>","license":"MIT","private":false,"peerDependencies":{"@angular/core":"*","@angular/common":"*"},"main":"bundles/meepo-rxjs.umd.js","module":"meepo-rxjs.es5.js","es2015":"meepo-rxjs.js","typings":"meepo-rxjs.d.ts","metadata":"meepo-rxjs.metadata.json"}

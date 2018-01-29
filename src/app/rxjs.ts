@@ -8,5 +8,3 @@ export { ReplaySubject } from 'rxjs/ReplaySubject';
 export { Subscription } from 'rxjs/Subscription';
 /* Notification */
 export { Notification } from 'rxjs/Notification';
-
-
