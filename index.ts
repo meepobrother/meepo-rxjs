@@ -154,7 +154,7 @@ export { mergeMap as flatMap } from 'rxjs/operators/mergeMap';
 /* Observable */
 export { Observable } from 'rxjs/Observable';
 /* Subjects */
-export { Subject } from 'rxjs/Subject';
+export { Subject, AnonymousSubject } from 'rxjs/Subject';
 export { BehaviorSubject } from 'rxjs/BehaviorSubject';
 export { ReplaySubject } from 'rxjs/ReplaySubject';
 /* Subscription */
