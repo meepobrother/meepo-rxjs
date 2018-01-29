@@ -1,12 +1,12 @@
 - use
 ```sh
-git submodule add https://github.com/meepobrother/meepo-rxjs.git rx
+git submodule add https://github.com/meepobrother/meepo-rxjs.git src/app/rx
 ```
 
-- ts
+- app.component.ts
 
 ```ts
-import { map, of tap } from 'rx';
+import { map, of tap } from './rx';
 
 of(1,2,3,4,5,6).pipe(
     tap(res=>{
