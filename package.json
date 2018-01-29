@@ -1,0 +1,19 @@
+{
+  "name": "meepo-rxjs",
+  "version": "1.0.0",
+  "description": "- use ```sh git submodule add https://github.com/meepobrother/meepo-rxjs.git rx ```",
+  "main": "index.js",
+  "scripts": {
+    "git": "git add . && git commit -m 'update to save' && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meepobrother/meepo-rxjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meepobrother/meepo-rxjs/issues"
+  },
+  "homepage": "https://github.com/meepobrother/meepo-rxjs#readme"
+}

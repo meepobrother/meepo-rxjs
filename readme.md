@@ -1,7 +1,21 @@
 - use
 ```sh
-git clone https://github.com/meepobrother/meepo-rxjs.git rxjs
+git submodule add https://github.com/meepobrother/meepo-rxjs.git rx
+```
 
+- ts
+
+```ts
+import { map, of tap } from 'rx';
+
+of(1,2,3,4,5,6).pipe(
+    tap(res=>{
+        console.log(res);
+    }),
+    map(res=>({id: res}))
+).subscribe(res=>{
+    console.log(res);
+})
 ```
 
 ```ts
